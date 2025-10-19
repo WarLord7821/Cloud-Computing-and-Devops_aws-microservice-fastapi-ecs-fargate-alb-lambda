@@ -21,3 +21,10 @@ def hello(name: str | None = None):
 def greet(data: MessageIn):
     return {"message": f"Hello, {data.name} — this response is from the microservice."}
 
+
+# ✅ Run FastAPI on port 80 (required for ECS Fargate)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=80)
+
+
