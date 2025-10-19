@@ -1,0 +1,1 @@
+Containerized FastAPI microservice deployed on AWS ECS Fargate behind an ALB, with an AWS Lambda function invoking the service; includes ECR push, ECS task/service, health checks, and end-to-end tests.”
